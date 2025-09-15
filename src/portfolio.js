@@ -97,6 +97,13 @@ const educationInfo = {
       descBullets: [
         "Core subjects: Maths, Physics, Chemistry"
       ]
+    },
+    {
+      schoolName: "JGR High College",
+      logo: require("./assets/images/jgr.png"), // placeholder logo reuse
+      subHeader: "MPC (Maths, Physics, Chemistry)",
+      duration: "2005 - 2010",
+      desc: "Graduated with 90%"
     }
   ]
 };
@@ -108,8 +115,8 @@ const techStack = {
   experience: [
     {Stack: "Data Engineering & ETL", progressPercentage: "90%"},
     {Stack: "Cloud (GCP/Azure/AWS)", progressPercentage: "85%"},
-    {Stack: "Distributed Computing (Spark)", progressPercentage: "80%"},
-    {Stack: "Microservices & APIs", progressPercentage: "75%"}
+    {Stack: "Distributed Computing (Spark)", progressPercentage: "60%"},
+    {Stack: "Microservices & APIs", progressPercentage: "70%"}
   ],
   displayCodersrank: false
 };
@@ -189,7 +196,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Google Cloud Professional Developer",
-      subtitle: "GCP Certified (plus Professional Developer, ACE, Cloud Leader)",
+      subtitle: "GCP Certified (plus Professional Architect, ACE, Cloud Leader)",
       image: require("./assets/images/gcp_developer.png"),
       imageAlt: "GCP Certification",
       footerLink: []
@@ -229,11 +236,11 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Articles",
-  subtitle: "Writing coming soon around data engineering & identity resolution.",
-  displayMediumBlogs: "false",
+  title: "Blogs",
+  subtitle: "I share lessons on data engineering, airflow, spark & cloud.",
+  displayMediumBlogs: "true", // set true if you later connect Medium username
   blogs: [],
-  display: false
+  display: true
 };
 
 // Talks Sections
@@ -246,10 +253,9 @@ const talkSection = {
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Dataflow Podcast",
+      slides_url: "https://www.astronomer.io/podcast/from-etl-to-airflow-transforming-data-engineering-at-deloitte-digital-with-raviteja-tholupunoori/",
+      event_url: "https://www.youtube.com/watch?v=KfheigCnu_8"
     }
   ],
   display: true // Set false to hide this section, defaults to true
