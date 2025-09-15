@@ -7,15 +7,27 @@
 
 /* Rectangle Card Layout */
 .rectangle {
-  background: url(../../assets/images/talksCardBack.svg);
-  width: 380px;
+  background: url(../../assets/images/airflow_podcast.png) left center / cover no-repeat;
+  width: 420px;
   height: 300px;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0px 20px 50px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient overlay for text readability */
+.rectangle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.05) 100%);
+  pointer-events: none;
+  border-radius: inherit;
 }
 .rectangle:hover {
   box-shadow: 0 20px 40px $textColorDark;
@@ -23,10 +35,9 @@
 .dark-rectangle {
   box-shadow: 0px 0px 20px 0px;
 }
+// Removed clipping mask to show full image
 .mask {
-  clip: rect(0px, 460px, 220px, 0px);
-  border-radius: 4px;
-  position: absolute;
+  display: none;
 }
 
 /* Card  Styling */
@@ -34,27 +45,23 @@
   color: $textColorDark;
   margin: auto;
   text-align: left;
-  margin-top: 25px;
-  padding: 0px 0px 40px 30px;
-  font-size: 30px;
-  line-height: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  margin-top: 20px;
+  padding: 0 20px 10px 20px;
+  font-size: 28px;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  position: relative;
+  z-index: 1;
 }
 .talk-card-subtitle {
-  margin-top: 35px;
-  text-align: justify;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 15px;
   color: $talkCardSubTitle;
-  line-height: 18px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  line-height: 20px;
+  position: relative;
+  z-index: 1;
 }
 .talk-button {
   background-color: $buttonColor;
@@ -69,6 +76,7 @@
   font-size: 14px;
   cursor: pointer;
 }
+.card-footer-button-div { position: relative; z-index: 1; }
 .talk-button:hover {
   background: $buttonHover;
 }
