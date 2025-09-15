@@ -10,13 +10,13 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000, // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true, // Set to false to use static SVG
 };
 
 const greeting = {
@@ -26,7 +26,7 @@ const greeting = {
     "Senior Data / Product Engineer with 8+ years designing and building cloud-native data & identity resolution platforms. Expert in Apache Spark, Airflow, Talend, and modern data lake / warehouse patterns across GCP, Azure & AWS. Passionate about performance tuning, scalable ETL, and enabling Customer Data Platforms (CDP)."
   ),
   resumeLink: "https://drive.google.com/file/d/1tAQKUdgUVL2agwEU3uhqqUiJAkyh6A5g/view?usp=sharing", // TODO: add public resume link
-  displayGreeting: true
+  displayGreeting: true,
 };
 
 // Social Media Links
@@ -36,7 +36,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/traviteja/",
   gmail: "raviteja0096@gmail.com",
   // add more if desired e.g. twitter, medium
-  display: true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Skills Section
@@ -81,8 +81,8 @@ const educationInfo = {
       schoolName: "CVR College of Engineering (JNTUH)",
       logo: require("./assets/images/cvr.png"), // placeholder logo reuse
       subHeader: "B.Tech in Electronics & Communication Engineering",
-      duration: "2012 - 2016",
-      desc: "Graduated with 81%",
+  duration: "2012 - 2016",
+  desc: "Graduated with 81%",
       // descBullets: [
       //   "Core subjects: Data Structures, DBMS, Signals & Systems",
       //   "Active in coding & technology clubs"
@@ -92,8 +92,8 @@ const educationInfo = {
       schoolName: "SR Junior College",
       logo: require("./assets/images/sr.png"), // placeholder logo reuse
       subHeader: "MPC (Maths, Physics, Chemistry)",
-      duration: "2010 - 2012",
-      desc: "Graduated with 94%",
+  duration: "2010 - 2012",
+  desc: "Graduated with 94%",
       // descBullets: [
       //   "Core subjects: Maths, Physics, Chemistry"
       // ]
@@ -102,8 +102,8 @@ const educationInfo = {
       schoolName: "JGR High College",
       logo: require("./assets/images/jgr.png"), // placeholder logo reuse
       // subHeader: "MPC (Maths, Physics, Chemistry)",
-      duration: "2005 - 2010",
-      desc: "Graduated with 90%"
+  duration: "2005 - 2010",
+  desc: "Graduated with 90%",
     }
   ]
 };
@@ -113,12 +113,12 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    {Stack: "Data Engineering & ETL", progressPercentage: "90%"},
-    {Stack: "Cloud (GCP/Azure/AWS)", progressPercentage: "85%"},
-    {Stack: "Distributed Computing (Spark)", progressPercentage: "60%"},
-    {Stack: "Microservices & APIs", progressPercentage: "70%"}
+    { Stack: "Data Engineering & ETL", progressPercentage: "90%" },
+    { Stack: "Cloud (GCP/Azure/AWS)", progressPercentage: "85%" },
+    { Stack: "Distributed Computing (Spark)", progressPercentage: "60%" },
+    { Stack: "Microservices & APIs", progressPercentage: "70%" },
   ],
-  displayCodersrank: false
+  displayCodersrank: false,
 };
 
 // Work experience section
@@ -135,7 +135,7 @@ const workExperiences = {
       descBullets: [
         "Migrated IDR to support AWS & Azure in 3 months",
         "Modernized pipeline from .NET to Spark (70% faster)",
-        "Custom pipeline processing 800M records (50% faster)"
+        "Custom pipeline processing 800M records (50% faster)",
       ]
     },
     {
@@ -146,8 +146,8 @@ const workExperiences = {
       desc: "Developed Angular & low-code solutions incl. ATS & data automation for HR & integrations.",
       descBullets: [
         "Built modular SPAs & REST API integrations",
-        "Developed ATS for recruiters with search automation"
-      ]
+        "Developed ATS for recruiters with search automation",
+      ],
     },
     {
       role: "Business Technology Analyst",
@@ -157,8 +157,8 @@ const workExperiences = {
       desc: "Implemented large-scale CDP ingestion & curation (Talend, Airflow, GCP).",
       descBullets: [
         "Automated 400GB+ file processing (cut 18-20 days to 2-3 days)",
-        "Improved data feed runtime from 13h to 1h"
-      ]
+        "Improved data feed runtime from 13h to 1h",
+      ],
     },
     {
       role: "Software Engineer",
@@ -175,7 +175,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "false",
-  display: false
+  display: false,
 };
 
 // Some big projects you have worked on
@@ -184,7 +184,7 @@ const bigProjects = {
   title: "",
   subtitle: "",
   projects: [],
-  display: false
+  display: false,
 };
 
 // Achievement Section
@@ -199,38 +199,38 @@ const achievementSection = {
       subtitle: "GCP Certified (plus Professional Architect, ACE, Cloud Leader)",
       image: require("./assets/images/gcp_developer.png"),
       imageAlt: "GCP Certification",
-      footerLink: []
+  footerLink: [],
     },
     {
       title: "Apache Airflow Champion & Fundamentals",
       subtitle: "Certified in Airflow Fundamentals & Champions of Apache Airflow (Astronomer)",
       image: require("./assets/images/airflow_astro.png"),
       imageAlt: "Airflow",
-      footerLink: []
+  footerLink: [],
     },
     {
       title: "MongoDB SI Architect & Associate",
       subtitle: "MongoDB Solution Implementation certifications",
       image: require("./assets/images/mongodb.png"),
       imageAlt: "MongoDB",
-      footerLink: []
+  footerLink: [],
     },
     {
       title: "Microsoft C# Developer & AWS Technical Professional",
       subtitle: "Microsoft Certified (Programming in C#)",
       image: require("./assets/images/c_sharp.png"),
       imageAlt: "Certifications",
-      footerLink: []
+  footerLink: [],
     },
     {
       title: "Multiple Client & Internal Awards",
       subtitle: "Outstanding, Applause Performance & Spot awards for delivery, migration & performance tuning",
       image: require("./assets/images/awards.png"),
       imageAlt: "Awards",
-      footerLink: []
+    footerLink: [],
     }
   ],
-  display: true
+  display: true,
 };
 
 // Blogs Section
@@ -240,7 +240,7 @@ const blogSection = {
   subtitle: "I share lessons on data engineering, airflow, spark & cloud.",
   displayMediumBlogs: "true", // set true if you later connect Medium username
   blogs: [],
-  display: true
+  display: true,
 };
 
 // Talks Sections
@@ -258,7 +258,7 @@ const talkSection = {
       event_url: "https://www.youtube.com/watch?v=KfheigCnu_8"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -268,9 +268,9 @@ const podcastSection = {
   subtitle: "Guest appearances & conversations.",
   // Provide raw embed URLs (iframe src values); rendering handled in Podcast.js
   podcast: [
-    "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
+    "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0",
   ],
-  display: true
+  display: true,
 };
 
 // Resume Section
@@ -279,21 +279,21 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Open to discuss data platform engineering, performance tuning or architecture.",
   number: "+91-9542710096",
-  email_address: "raviteja0096@gmail.com"
+  email_address: "raviteja0096@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "", // no twitter currently
-  display: false
+  display: false,
 };
 
 const isHireable = true; // Open for opportunities
