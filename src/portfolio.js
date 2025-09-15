@@ -209,7 +209,7 @@ const achievementSection = {
       footerLink: []
     },
     {
-      title: "MongoDB SI Associate & Architect",
+      title: "MongoDB SI Architect & Associate",
       subtitle: "MongoDB Solution Implementation certifications",
       image: require("./assets/images/mongodb.png"),
       imageAlt: "MongoDB",
@@ -224,7 +224,7 @@ const achievementSection = {
     },
     {
       title: "Multiple Client & Internal Awards",
-      subtitle: "Applause, Outstanding Performance & Spot awards for delivery, migration & performance tuning",
+      subtitle: "Outstanding, Applause Performance & Spot awards for delivery, migration & performance tuning",
       image: require("./assets/images/awards.png"),
       imageAlt: "Awards",
       footerLink: []
@@ -248,7 +248,7 @@ const blogSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
   talks: [
@@ -258,16 +258,19 @@ const talkSection = {
       event_url: "https://www.youtube.com/watch?v=KfheigCnu_8"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "Guest appearances & talks coming soon.",
-  podcast: [],
-  display: false
+  subtitle: "Guest appearances & conversations.",
+  // Provide raw embed URLs (iframe src values); rendering handled in Podcast.js
+  podcast: [
+    "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
+  ],
+  display: true
 };
 
 // Resume Section
