@@ -82,11 +82,11 @@ const educationInfo = {
       logo: require("./assets/images/cvr.png"), // placeholder logo reuse
       subHeader: "B.Tech in Electronics & Communication Engineering",
       duration: "2012 - 2016",
-      desc: "Graduated with 81%. Built strong engineering foundation applied later to large-scale data systems.",
-      descBullets: [
-        "Core subjects: Data Structures, DBMS, Signals & Systems",
-        "Active in coding & technology clubs"
-      ]
+      desc: "Graduated with 81%",
+      // descBullets: [
+      //   "Core subjects: Data Structures, DBMS, Signals & Systems",
+      //   "Active in coding & technology clubs"
+      // ]
     },
      {
       schoolName: "SR Junior College",
@@ -94,14 +94,14 @@ const educationInfo = {
       subHeader: "MPC (Maths, Physics, Chemistry)",
       duration: "2010 - 2012",
       desc: "Graduated with 94%",
-      descBullets: [
-        "Core subjects: Maths, Physics, Chemistry"
-      ]
+      // descBullets: [
+      //   "Core subjects: Maths, Physics, Chemistry"
+      // ]
     },
     {
       schoolName: "JGR High College",
       logo: require("./assets/images/jgr.png"), // placeholder logo reuse
-      subHeader: "MPC (Maths, Physics, Chemistry)",
+      // subHeader: "MPC (Maths, Physics, Chemistry)",
       duration: "2005 - 2010",
       desc: "Graduated with 90%"
     }
