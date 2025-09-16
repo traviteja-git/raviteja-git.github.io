@@ -49,13 +49,16 @@
     <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
     <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"></script>
+    <!-- Google Analytics (UA legacy + GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFNWX56LLL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
-
+      // GA4 measurement ID (replace or set REACT_APP_GA_ID in .env to override at build time)
+      var GA4_ID = '%REACT_APP_GA_ID%' !== '%REACT_APP_GA_ID%' ? '%REACT_APP_GA_ID%' : 'G-BFNWX56LLL';
+      gtag('config', GA4_ID);
+      // (Optional) Retain legacy UA property for continuity
       gtag('config', 'UA-135618960-2');
     </script>
 
