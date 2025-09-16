@@ -335,7 +335,7 @@ const podcastSection = {
 
 // Recommendations Section (manually curated testimonials)
 const recommendationsSection = {
-  title: "Recommendations",
+  title: "Recommendations 🗣",
   subtitle: "What colleagues and stakeholders say.",
   recommendations: [
     {
