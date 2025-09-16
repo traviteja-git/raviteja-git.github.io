@@ -267,6 +267,60 @@ If you can help us with these. Please don't hesitate to open a [pull request](ht
 - Add More Sections
 
 
+## Local Articles (In-Repo) vs Medium Blogs
+
+In addition to the existing Medium-driven Blogs section, this fork adds an internal Articles area routed at `/articles`.
+
+### Why?
+Keep long-form or draft content version-controlled while still linking out to published Medium posts.
+
+### Structure
+```
+src/
+  articles/
+    sample-intro.md
+    index.js (exports metadata + dynamic import functions)
+```
+
+Each markdown file begins with simple frontmatter (ignored except for manual duplication in `index.js`):
+```markdown
+---
+slug: airflow-operators-guide
+title: Deep Dive: Airflow Operators
+date: 2025-09-16
+description: Patterns and pitfalls when designing custom operators.
+tags: [airflow, operators]
+---
+```
+
+### Adding a New Article
+1. Create a `your-slug.md` in `src/articles/` with frontmatter and content.
+2. Edit `src/articles/index.js` and append a new object:
+```js
+  {
+    slug: 'airflow-operators-guide',
+    title: 'Deep Dive: Airflow Operators',
+    date: '2025-09-16',
+    description: 'Patterns and pitfalls when designing custom operators.',
+    importPath: () => import('./airflow-operators-guide.md')
+  }
+```
+3. Run `npm start` and visit `http://localhost:3000/articles`.
+4. Click card to view rendered markdown at `/articles/airflow-operators-guide`.
+
+### Notes
+* Medium Blogs unchanged: controlled by `blogSection` + `MEDIUM_USERNAME`.
+* Router added (react-router-dom v5). Existing hash anchor navigation still works on the root path.
+* Frontmatter is stripped by a simple regex in `ArticleView`; extend if you need richer metadata.
+* Styling located in `src/containers/articles/Articles.scss`.
+
+### Future Enhancements (Ideas)
+* Generate index automatically via a small script.
+* Add tag filtering and RSS generation for local articles.
+* Integrate syntax highlighting (e.g., `react-syntax-highlighter`).
+* Add search over local article content.
+
+
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
