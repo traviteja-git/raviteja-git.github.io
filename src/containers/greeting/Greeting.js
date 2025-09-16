@@ -40,15 +40,16 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
+                {
+                  /* Always force a direct download of the local bundled resume.pdf */
+                }
+                <a
+                  href={require("./resume.pdf")}
+                  download="Raviteja-Resume.pdf"
+                  className="download-link-button"
+                >
+                  <Button text="Download My Resume" />
+                </a>
               </div>
             </div>
           </div>
