@@ -40,9 +40,7 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {
-                  /* Always force a direct download of the local bundled resume.pdf */
-                }
+                {/* Always force a direct download of the local bundled resume.pdf */}
                 <a
                   href={require("./resume.pdf")}
                   download="Raviteja-Resume.pdf"
