@@ -112,7 +112,7 @@ Edit `src/portfolio.js` to update:
 Icons use Font Awesome class names. Emojis: wrap text with `emoji("text 🚀")` helper.
 
 ### Resume
-Place `resume.pdf` in `src/containers/greeting/` (same folder as `Greeting.js`). The resume button always triggers a direct download (filename `Raviteja-Resume.pdf`). External links are no longer used for viewing in-browser.
+Place `public/resume.pdf` in `src/containers/greeting/` (same folder as `Greeting.js`). The resume button always triggers a direct download (filename `Raviteja-Resume.pdf`). External links are no longer used for viewing in-browser.
 
 ### Lottie Animations
 Replace JSON under `src/assets/lottie/` and update import in `src/portfolio.js` if you change file names.

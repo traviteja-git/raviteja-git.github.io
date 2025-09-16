@@ -36,6 +36,8 @@ const socialMediaLinks = {
   github: "https://github.com/traviteja-git",
   linkedin: "https://www.linkedin.com/in/traviteja/",
   gmail: "raviteja0096@gmail.com",
+  medium: "https://medium.com/@raviteja0096",
+  instagram: "https://www.instagram.com/this.raviteja",
   // add more if desired e.g. twitter, medium
   display: true // Set false to hide this section, defaults to true
 };

@@ -40,13 +40,21 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {/* Always force a direct download of the local bundled resume.pdf */}
                 <a
-                  href={require("./resume.pdf")}
-                  download="Raviteja-Resume.pdf"
+                  href={greeting.resumeLink ? greeting.resumeLink : "/resume.pdf"}
+                  // If external link provided open in new tab, else force download of local static file
+                  target={greeting.resumeLink ? "_blank" : undefined}
+                  rel={greeting.resumeLink ? "noopener noreferrer" : undefined}
+                  download={greeting.resumeLink ? undefined : "Raviteja-Resume.pdf"}
                   className="download-link-button"
                 >
-                  <Button text="Download My Resume" />
+                  <Button
+                    text={
+                      greeting.resumeLink
+                        ? "View / Download Resume"
+                        : "Download My Resume"
+                    }
+                  />
                 </a>
               </div>
             </div>
