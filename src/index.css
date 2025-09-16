@@ -25,7 +25,6 @@ body {
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #171c28; /* ensures consistent dark background, removes white edge on mobile */
 }
 /* Media Query */
 @media (max-width: 1380px) {
