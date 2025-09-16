@@ -20,8 +20,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Tholupunoori Raviteja",
-  title: "Hi, I'm Raviteja",
+  username: "Raviteja",
+  title: "Hi, I'm Raviteja Tholupunoori",
   subTitle: emoji(
     "Senior Data / Product Engineer with 9+ years designing and building cloud-native data & identity resolution platforms. Expert in Apache Spark, Airflow, Talend, and modern data lake / warehouse patterns across GCP, Azure & AWS. Passionate about performance tuning, scalable ETL, and enabling Customer Data Platforms (CDP)."
   ),
@@ -326,7 +326,9 @@ const podcastSection = {
   subtitle: "Guest appearances & conversations.",
   // Provide raw embed URLs (iframe src values); rendering handled in Podcast.js
   podcast: [
-    "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
+  "https://www.youtube.com/embed/KfheigCnu_8?si=xmc50L7aB-rQlSBK",
+  "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
+  // Added YouTube video embed
   ],
   display: true
 };

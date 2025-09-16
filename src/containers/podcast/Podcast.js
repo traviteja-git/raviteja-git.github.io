@@ -28,28 +28,43 @@ export default function Podcast() {
             {podcastSection.subtitle}
           </p>
         </div>
-        <div className="podcast-main-div">
-          {podcastSection.podcast.map((podcastLink, i) => {
-            if (!podcastLink) {
-              console.log(
-                `Podcast link for ${podcastSection.title} is missing`
-              );
-            }
-            return (
-              <div key={i}>
-                <iframe
-                  className="podcast"
-                  src={podcastLink}
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  title={`podcast-${i}`}
-                  style={{borderRadius: "12px", height: 152}}
-                ></iframe>
-              </div>
-            );
-          })}
-        </div>
+        {(() => {
+          const youTubeEmbeds = podcastSection.podcast.filter(p => /youtube\.com\/embed/.test(p));
+          const otherEmbeds = podcastSection.podcast.filter(p => !/youtube\.com\/embed/.test(p));
+          return (
+            <div className="podcast-vertical">
+              {youTubeEmbeds.map((link, idx) => (
+                <div key={`yt-${idx}`} className="youtube-wrapper">
+                  <iframe
+                    className="podcast podcast-youtube large"
+                    src={link}
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title={`podcast-youtube-${idx}`}
+                  ></iframe>
+                </div>
+              ))}
+              {otherEmbeds.length > 0 && (
+                <div className="other-podcasts">
+                  {otherEmbeds.map((link, i) => (
+                    <div key={`other-${i}`}>
+                      <iframe
+                        className="podcast podcast-spotify"
+                        src={link}
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                        title={`podcast-${i}`}
+                        style={{borderRadius: "12px"}}
+                      ></iframe>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })()}
       </div>
     </Fade>
   );
