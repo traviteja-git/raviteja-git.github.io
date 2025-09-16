@@ -108,7 +108,10 @@
     box-sizing: border-box;
   }
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px; // spacing between buttons on mobile
+    row-gap: 16px;
   }
   .greeting-text {
     font-size: 30px;
