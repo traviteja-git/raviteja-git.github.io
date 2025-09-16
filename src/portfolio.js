@@ -333,6 +333,115 @@ const podcastSection = {
   display: true
 };
 
+// Recommendations Section (manually curated testimonials)
+const recommendationsSection = {
+  title: "Recommendations",
+  subtitle: "What colleagues and stakeholders say.",
+  recommendations: [
+    {
+      name: "Andi Mitre",
+      title: "Engineering Lead",
+      company: "Deloitte",
+      relationship: "Ravi Reported to Andi",
+      date: "Nov 2023",
+      quote:
+        "I absolutely loved having Raviteja on my team. During his time at Deloitte he wore many hats and for that, I will always be thankful! Raviteja is a one of a kind, extremely talented developer. He built some of the most complex components of our identity resolution system while showing a deep understanding of data engineering and software development. He played an active role on the team with responsibilities ranging from algorithm design, system architecture, core code development, mentoring junior engineers, and on an as needed basis, client support and stakeholder interactions. He’s a hard worker who is eager to continuously learn and thrives on complex problems. He’s easy to talk to, very receptive to feedback, empathetic with clients and loves to fully immerse in the team culture. Having Raviteja work on our identity resolution offering aligned perfectly with his abilities since it is an area that requires creativity, exploration and a deep understanding of many edge cases to construct such a flexible, yet robust solution.On a more specific note, Raviteja single handedly re-wrote a micro-service and was able to improve performance by 5x, having an immensely positive impact with existing clients. His dedication and capabilities have more than once turned around projects at risk, saving the company time and resources.",
+      avatar: null
+    },
+    {
+      name: "Tarini Dash",
+      title: "Head of Data Engineering and Analytics",
+      company: "Deloitte",
+      relationship: "Ravi Managed by Tarini",
+      date: "April 2024",
+      quote:
+        "Over the span of three years, Ravi served under my supervision as a Senior Data Engineer at Deloitte. During the time he exhibited remarkable qualities and demonstrated significant growth. He consistently displayed a high level of energy and enthusiasm in his development work, establishing himself as a proactive and delivery driven individual. Witnessing his progression from an average developer to a proficient and capable of independently leading and executing tasks from inception to completion was truly remarkable.Ravi's approach to his work is characterized by his intuitive nature and his relentless pursuit of adopting cutting-edge technologies. He possesses a genuine thirst for knowledge, continually seeking opportunities to expand his skill set and stay abreast of emerging trends in the field. Notably, he has amassed a formidable array of cloud certifications, a testament to his dedication to professional growth and development.For any organization in need of a seasoned and go getter Senior Data Engineer, who is capable of architecting and implementing pipelines from inception to execution, Ravi stands out as an exemplary candidate. His track record of success, coupled with his unwavering commitment to excellence, make him a highly valuable asset to any team or project.I wish him all the best in his future.",
+      avatar: null
+    },
+    {
+      name: "Manoj Balaji",
+      title: "Data Scientist",
+      company: "Jupiner Networks",
+      relationship: "Manoj Worked with Ravi",
+      date: "May 2023",
+      quote:
+        "Raviteja is a very hard working and dedicated developer. He is very detail oriented and quite a creative programmer & has a very broad knowledge of software including languages, API’s, databases and documentation. I found him to be very helpful, always willing and able to explain how things were supposed to work which help me to tackle complex tasks.In addition to his technical expertise, Raviteja shows total dedication to his work, his colleagues, and his clients. He is a team player who is very customer-focused and always willing to help and share his knowledge with others. He has a great amount of patience when explaining how something works from both a technical and a functional standpoint. Raviteja would be a valuable asset to any organization and I highly recommend him.",
+      avatar: null
+    },
+    {
+      name: "Abin Mathew",
+      title: "Data Engineer",
+      company: "Deloitte",
+      relationship: "Ravi Directly to Ravi",
+      date: "Nov 2023",
+      quote:
+        "Ravi has been a go-to person in the Identity Resolution (IDR) project. His deep understanding of IDR functionalities and his willingness to guide others make him an invaluable team member.With strong expertise in data engineering tools and technologies, he continuously learns and applies his knowledge to solve complex challenges efficiently. His collaborative approach and problem-solving mindset ensure that the solutions he builds are both effective and scalable. I highly recommend Ravi for his technical acumen and dedication!",
+      avatar: null
+    },
+    {
+      name: "Garima",
+      title: "Data Engineer",
+      company: "Deloitte",
+      relationship: "Garima worked with Raviteja on the same team",
+      date: "June 2025",
+      quote:
+        "Ravi is one of the most talented and dedicated engineers I have ever worked with. His depth of knowledge in the technical aspects of Identity Resolution is truly unmatched. Ravi constantly goes above and beyond in his role to ensure success of the project . He constantly seeks out new technologies and methodologies always striving to expand his skill set, raising the bar for everyone around him. It’s been an honour to work with Ravi.",
+      avatar: null
+    },
+    {
+      name: "Tanvi Moharir",
+      title: "Consultant",
+      company: "Deloitte",
+      relationship: "Tanvi Worked with Ravi",
+      date: "Nov 2022",
+      quote:
+        "Raviteja was one of the senior engineers , I worked alongside with, in the core development team. He is passionate and well versed with the internal workings of CDP systems. While his expertise lie in backend development with C# and .Net framework, he was very quick on picking up other languages and frameworks as well. Any team looking for a bright and passionate engineer would be lucky to have him.",
+      avatar: null
+    },
+    {
+      name: "Nikitha Kumari",
+      title: "Technical Lead QA",
+      company: "Deloitte",
+      relationship: "Mentored Ravi",
+      date: "Nov 2023",
+      quote:
+        "Ravi had been my coachee for almost a year.Ravi has very good technical skills and he is always striving to excel in whatever he is doing.He is always ready to learn and always seeking feedback to be a better version of himself.Ravi adds value to the projects he is working on.It was great mentoring you Ravi!All the very best for your future!",
+      avatar: null
+    },
+    {
+      name: "Samyuktha K",
+      title: "Software Developer",
+      company: "Equifax",
+      relationship: "Ravi Mentored Samyuktha",
+      date: "Nov 2022",
+      quote:
+        "Raviteja is a very hard working and dedicated developer. He is very detail oriented and quite a creative programmer & has a very broad knowledge of software including languages, API’s, databases and documentation. I found him to be very helpful, always willing and able to explain how things were supposed to work which help me to tackle complex tasks.In addition to his technical expertise, Raviteja shows total dedication to his work, his colleagues, and his clients. He is a team player who is very customer-focused and always willing to help and share his knowledge with others. He has a great amount of patience when explaining how something works from both a technical and a functional standpoint. Raviteja would be a valuable asset to any organization and I highly recommend him.",
+      avatar: null
+    },
+    {
+      name: "Snehitha Anumalla",
+      title: "Sr. Consultant",
+      company: "Deloitte",
+      relationship: "Snehitha Worked with Ravi",
+      date: "May 2023",
+      quote:
+        "Raviteja is great team player and has extensive knowledge on Cloud platform, API's. He has been a go-to person for many collegues in the team for various issues on ETL as well. Being a quick learner he was able to mould to any technology based on requirements.",
+      avatar: null
+    },
+    {
+      name: "Maddie Paul",
+      title: "Manager RPA",
+      company: "Farm Mutel Re",
+      relationship: "Maddie Worked with Ravi",
+      date: "Dec 2022",
+      quote:
+        "While working with Raviteja, I found him to be a quick learner demonstrating flexibility to keep trying without the fear of failure. His enthusiasm and energy to pursue complex projects is commendable. Undoubtedly, he would be an asset to any firm/project he takes on.",
+      avatar: null
+    }
+  ],
+  display: true
+};
+
 // Resume Section
 const resumeSection = {
   title: "Resume",
@@ -375,6 +484,7 @@ export {
   blogSection,
   talkSection,
   podcastSection,
+  recommendationsSection,
   contactInfo,
   twitterDetails,
   isHireable,
