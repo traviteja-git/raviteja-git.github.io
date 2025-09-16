@@ -205,10 +205,10 @@ const bigProjects = {
 // Achievement Section
 // Include certificates, talks etc
 
-const achievementSection = {
-  title: emoji("Achievements & Certifications 🏆"),
-  subtitle: "Selected awards & professional certifications.",
-  achievementsCards: [
+const certificationSection = {
+  title: emoji("Certifications 🪪"),
+  subtitle: "Selected Professional certifications.",
+  certificationCards: [
     {
       title: "Google Cloud Professional Developer",
       subtitle:
@@ -240,11 +240,50 @@ const achievementSection = {
       footerLink: []
     },
     {
+      title: "GenAI Engineer",
+      subtitle: "Deloitte Certified (GenAI Guild Program)",
+      image: require("./assets/images/genai_deloittte.png"),
+      imageAlt: "Certifications",
+      footerLink: []
+    }
+  ],
+  display: true
+};
+
+const achievementSection = {
+  title: emoji("Achievements 🏆"),
+  subtitle: "Professional certifications.",
+  achievementsCards: [
+    {
+      title: "Apache Airflow Champion by Astronomer",
+      subtitle:
+        "Selected as Astronomer Champions for Apache Airflow® - A global initiative dedicated to fostering passionate advocates of Apache Airflow.",
+      image: require("./assets/images/airflow_champion.png"),
+      imageAlt: "airflow_champion",
+      footerLink: []
+    },
+    {
+      title: "Multiple Google Skill Badges",
+      subtitle:
+        "Aquired Multiple Skill badges, Arcade Points and Google SWAG through Cloud Skills Boost",
+      image: require("./assets/images/gcp_skillboost.png"),
+      imageAlt: "Awards",
+      footerLink: []
+    },
+    {
       title: "Multiple Client & Internal Awards",
       subtitle:
-        "Outstanding, Applause Performance & Spot awards for delivery, migration & performance tuning",
+        "Outstanding, Applause & Spot awards for delivery, migration & performance tuning",
       image: require("./assets/images/awards.png"),
       imageAlt: "Awards",
+      footerLink: []
+    },
+    {
+      title: "TechGig Code Gladiators 2023",
+      subtitle:
+        "Qualified to Final round and stood in Top 10 of TechGig Code Gladiators 2023 - One of the world's biggest coding competition with 300K+ developers registering every year",
+      image: require("./assets/images/techgig_2023.png"),
+      imageAlt: "TechGig",
       footerLink: []
     }
   ],
@@ -328,6 +367,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  certificationSection,
   blogSection,
   talkSection,
   podcastSection,
