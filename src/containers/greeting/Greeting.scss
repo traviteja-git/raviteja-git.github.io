@@ -3,13 +3,13 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -100,6 +100,13 @@
   }
 }
 @media (max-width: 768px) {
+  .main,
+  .greet-main {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
   .button-greeting-div {
     justify-content: space-around;
   }
