@@ -4,10 +4,10 @@
 
 export const localArticles = [
   {
-    slug: 'Airflow',
-    title: 'Apache Airflow Architecture Simplified',
-    date: '2025-09-16',
-    description: 'Example of an in-repo article rendered via markdown.',
-    importPath: () => import('./airflow-architecture.md')
+    slug: "Airflow",
+    title: "Apache Airflow Architecture Simplified",
+    date: "2025-09-16",
+    description: "Example of an in-repo article rendered via markdown.",
+    importPath: () => import("./airflow-architecture.md")
   }
 ];
