@@ -14,8 +14,13 @@
   display: block;
 }
 
-.podcast-embed.video { aspect-ratio: 16 / 9; height: auto; }
-.podcast-embed.audio { height: 152px; }
+.podcast-embed.video {
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+.podcast-embed.audio {
+  height: 152px;
+}
 
 .podcast-vertical {
   --podcast-embed-width: 880px; // single width control
@@ -26,9 +31,16 @@
   width: 100%;
 }
 
-.youtube-wrapper { width: 100%; }
+.youtube-wrapper {
+  width: 100%;
+}
 
-.other-podcasts { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
+.other-podcasts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
 
 .podcast-main-div {
   display: grid;
@@ -54,7 +66,9 @@
   //   width: 100%;
   //   max-width: 320px;
   // }
-  .podcast-embed { max-width: 100%; }
+  .podcast-embed {
+    max-width: 100%;
+  }
   .podcast-main-div {
     text-align: center;
   }

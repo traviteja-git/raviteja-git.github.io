@@ -326,9 +326,9 @@ const podcastSection = {
   subtitle: "Guest appearances & conversations.",
   // Provide raw embed URLs (iframe src values); rendering handled in Podcast.js
   podcast: [
-  "https://www.youtube.com/embed/KfheigCnu_8?si=xmc50L7aB-rQlSBK",
-  "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
-  // Added YouTube video embed
+    "https://www.youtube.com/embed/KfheigCnu_8?si=xmc50L7aB-rQlSBK",
+    "https://open.spotify.com/embed/episode/6zzMZhm3PGESw4MVzjsn7D?utm_source=generator&theme=0"
+    // Added YouTube video embed
   ],
   display: true
 };

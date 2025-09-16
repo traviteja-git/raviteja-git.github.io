@@ -41,11 +41,15 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 <a
-                  href={greeting.resumeLink ? greeting.resumeLink : "/resume.pdf"}
+                  href={
+                    greeting.resumeLink ? greeting.resumeLink : "/resume.pdf"
+                  }
                   // If external link provided open in new tab, else force download of local static file
                   target={greeting.resumeLink ? "_blank" : undefined}
                   rel={greeting.resumeLink ? "noopener noreferrer" : undefined}
-                  download={greeting.resumeLink ? undefined : "Raviteja-Resume.pdf"}
+                  download={
+                    greeting.resumeLink ? undefined : "Raviteja-Resume.pdf"
+                  }
                   className="download-link-button"
                 >
                   <Button

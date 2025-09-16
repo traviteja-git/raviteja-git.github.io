@@ -29,8 +29,12 @@ export default function Podcast() {
           </p>
         </div>
         {(() => {
-          const youTubeEmbeds = podcastSection.podcast.filter(p => /youtube\.com\/embed/.test(p));
-          const otherEmbeds = podcastSection.podcast.filter(p => !/youtube\.com\/embed/.test(p));
+          const youTubeEmbeds = podcastSection.podcast.filter(p =>
+            /youtube\.com\/embed/.test(p)
+          );
+          const otherEmbeds = podcastSection.podcast.filter(
+            p => !/youtube\.com\/embed/.test(p)
+          );
           return (
             <div className="podcast-vertical">
               {youTubeEmbeds.map((link, idx) => (
