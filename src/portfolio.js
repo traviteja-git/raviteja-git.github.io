@@ -23,7 +23,7 @@ const greeting = {
   username: "Tholupunoori Raviteja",
   title: "Hi, I'm Raviteja",
   subTitle: emoji(
-    "Senior Data / Product Engineer with 8+ years designing and building cloud-native data & identity resolution platforms. Expert in Apache Spark, Airflow, Talend, and modern data lake / warehouse patterns across GCP, Azure & AWS. Passionate about performance tuning, scalable ETL, and enabling Customer Data Platforms (CDP)."
+    "Senior Data / Product Engineer with 9+ years designing and building cloud-native data & identity resolution platforms. Expert in Apache Spark, Airflow, Talend, and modern data lake / warehouse patterns across GCP, Azure & AWS. Passionate about performance tuning, scalable ETL, and enabling Customer Data Platforms (CDP)."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1tAQKUdgUVL2agwEU3uhqqUiJAkyh6A5g/view?usp=sharing", // TODO: add public resume link
