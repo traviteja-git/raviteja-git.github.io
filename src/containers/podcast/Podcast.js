@@ -36,7 +36,7 @@ export default function Podcast() {
               {youTubeEmbeds.map((link, idx) => (
                 <div key={`yt-${idx}`} className="youtube-wrapper">
                   <iframe
-                    className="podcast podcast-youtube large"
+                    className="podcast-embed video"
                     src={link}
                     frameBorder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -50,7 +50,7 @@ export default function Podcast() {
                   {otherEmbeds.map((link, i) => (
                     <div key={`other-${i}`}>
                       <iframe
-                        className="podcast podcast-spotify"
+                        className="podcast-embed audio"
                         src={link}
                         frameBorder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
