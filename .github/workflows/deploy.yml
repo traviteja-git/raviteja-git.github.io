@@ -1,42 +1,60 @@
-name: Build and Deploy
-env:
-  CI: false
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
-  USE_GITHUB_DATA: "false"
-  MEDIUM_USERNAME: "raviteja0096" # Change this to your medium username
+name: Build and Deploy (Pages)
+
 on:
   workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: [ master ]
   schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+    - cron: "0 12 * * 1"  # weekly rebuild
+
+# Required permissions for GitHub Pages official deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  CI: false
+  MEDIUM_USERNAME: "raviteja0096"
+  USE_GITHUB_DATA: "false"
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - name: Setup Node.js 20.17.0 🔧
         uses: actions/setup-node@v4
         with:
           node-version: 20.17.0
-          cache: 'npm'
+          cache: npm
 
-      # npm bundled with Node 20 is sufficient; avoid forcing latest which can break on engine mismatches
-      - name: Install and Build 🔧
-        run: |
-          npm ci || npm install
-          npm run build
+      - name: Install deps
+        run: npm ci || npm install
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Build site
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
           cname: traviteja.com
